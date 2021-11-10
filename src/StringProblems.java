@@ -1,8 +1,12 @@
 public class StringProblems {
 
-    public static String addHyphens(String s) {
+    public static String addHyphens(String s)
+        {String newString = "";
+        for (int i=0; 1<s.length(); i++) {
+            newString += s.substring(i, i+1) + "-";
+        }
+        return newString.substring(0, newString.length()-1);
 
-        return "";
     }
 
     public static String everyOtherLetter(String s) {
